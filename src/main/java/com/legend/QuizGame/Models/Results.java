@@ -12,6 +12,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
 
 
 @Entity
@@ -24,6 +25,9 @@ public class Results {
 	 
 	@NotEmpty(message = "Answered is required!")
 	private Boolean answered ;
+	
+	@NotEmpty(message = "score is required!")
+	private String score;
 	
 	@Column(updatable = false)
 	private Date createdAt;
