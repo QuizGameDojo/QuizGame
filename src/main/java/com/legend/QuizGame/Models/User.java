@@ -61,8 +61,6 @@ public class User {
     )     
     private List<Questions> questions;
     
-	
-	
 
 
 	public User() {

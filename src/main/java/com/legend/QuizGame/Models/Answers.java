@@ -28,7 +28,6 @@ public class Answers {
 	@NotEmpty(message = "Result is required!")
 	private Boolean isCorrect ;
 	
-	
 	//ManyToOne
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "questions_id")
